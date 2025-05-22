@@ -1,0 +1,61 @@
+
+
+
+basedir: ./
+
+expname: graf_05222025
+
+datadir_suffix: data/rfid/
+logdir_suffix: logs/rfid/
+
+
+train_index_path: train_index.txt
+test_index_path: test_index.txt
+
+
+
+mode: train
+# mode: test
+
+
+scene_id: 0
+
+near: 0.5
+far: 6.5
+
+
+coarse_feat_dim: 32
+N_importance: 64
+local_rank: 0
+single_net: False
+fine_feat_dim: 32
+lrate_gnt: 0.0005
+lrate_feature: 0.001
+lrate_decay_factor: 0.5
+lrate_decay_steps: 50000
+netwidth: 64
+trans_depth: 4
+ckpt_path: ""
+n_iters: 25000000
+N_rand: 64
+sample_mode: uniform
+num_source_views: 32
+center_ratio: 0.8
+N_samples: 64
+inv_uniform: True
+white_bkgd: False
+det: False
+i_print: 100
+i_weights: 100000
+i_img: 1000
+chunk_size: 360
+
+no_load_scheduler: False
+no_load_opt: False
+no_reload: False
+# not used
+render_stride: 1
+
+
+
+
